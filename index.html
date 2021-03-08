@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+	
 	<title>Simplex Electrical &#8211; For your electrical needs&#8230;</title>
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="alternate" type="application/rss+xml" title="Simplex Electrical &raquo; Feed" href="./feed/index.html">
@@ -25,7 +34,7 @@ img.emoji {
 	padding: 0 !important;
 }</style>
 	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=5.6.2" media="all">
-<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1614496555" media="all">
+<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1615193177" media="all">
 <script src="./wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="./wp-json/index.html">
@@ -40,9 +49,7 @@ img.emoji {
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Simplex Electrical - For your electrical needs...">
-<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>	<link rel="preconnect" href="https://fonts.gstatic.com/">
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+<style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 </head>
 
 <body class="home page-template page-template-page-templates page-template-template-home page-template-page-templatestemplate-home-php page page-id-12 wp-embed-responsive" itemscope itemtype="http://schema.org/WebSite">
@@ -54,13 +61,14 @@ img.emoji {
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 top-bar-info">
-					<span><i class="fas fa-map-marker-alt"></i> 130 Old Street, London EC1V 9BD</span>
+					<div><i class="fas fa-map-marker-alt"></i></div>
+					<div>Unit 46D, Micro Business Park, 46-50 Greatorex Street, London, E1 5NP</div>
 				</div>
 				<div class="col-lg-4 top-bar-info">
 					<span><i class="far fa-clock"></i> Mon-Fri 08:00 AM - 05:00 PM</span>
 				</div>
-				<div class="col-lg-4 top-bar-info">
-					<span><i class="fas fa-phone-alt"></i> +44 07383 996436</span>
+				<div class="col-lg-4 top-bar-info alt">
+					<a href="tel:+4407383996436"><i class="fas fa-phone-alt"></i> +44 07383 996436</a>
 				</div>
 			</div>
 		</div>		
@@ -77,7 +85,7 @@ img.emoji {
 		
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img id="logo" src="./wp-content/themes/simplex-electrician/img/simplex-logo.svg" alt="site-logo">
+					<img id="logo" class="site-logo" src="./wp-content/themes/simplex-electrician/img/simplex-logo.png" alt="simplex electric">
 				</a>
 
 					
@@ -89,13 +97,8 @@ img.emoji {
 				<!-- The WordPress Menu goes here -->
 				<div id="navbarNavDropdown" class="collapse navbar-collapse"><ul id="main-menu" class="navbar-nav">
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12 current_page_item active menu-item-16 nav-item"><a title="Home" href="./index.html" class="nav-link" aria-current="page">Home</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17 nav-item"><a title="About Us" href="#" class="nav-link">About Us</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18 nav-item"><a title="Services" href="#" class="nav-link">Services</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item"><a title="Prices" href="#" class="nav-link">Prices</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Gallery" href="#" class="nav-link">Gallery</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21 nav-item"><a title="Blog" href="#" class="nav-link">Blog</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22 nav-item"><a title="Shop" href="#" class="nav-link">Shop</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23 nav-item"><a title="Faq" href="#" class="nav-link">Faq</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="Contact" href="#" class="nav-link">Contact</a></li>
 </ul></div>
 				<div class="nav-button d-none d-lg-block">
@@ -128,29 +131,26 @@ img.emoji {
             <div class="carousel-item active">
                 <div class="carousel-overlay"></div>
                 <img class="d-block w-100 img-fluid" src="./wp-content/themes/simplex-electrician/img/carousel/carousel-img-1.jpg" alt="First slide">             
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>keeping you wired</h3>    
-                    <h1>We're the Current <br> Specialists!                       
-                </h1>
-</div>        
+                <div class="carousel-caption ">
+                    <span class="carousel-sub-heading">keeping you wired</span>    
+                    <h2 class="carousel-main-heading">We're the Current <br> Specialists!</h2>                       
+                </div>        
             </div>
             <div class="carousel-item">
                 <div class="carousel-overlay"></div>
                 <img class="d-block w-100 img-fluid" src="./wp-content/themes/simplex-electrician/img/carousel/carousel-img-2.jpg" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>making our clients happier</h3>    
-                    <h1>Best Services for <br> Your Family                       
-                </h1>
-</div>  
+                <div class="carousel-caption ">
+                    <span class="carousel-sub-heading">making our clients happier</span>    
+                    <h2 class="carousel-main-heading">Best Services for <br> Your Family</h2>                       
+                </div>  
             </div>
             <div class="carousel-item">
                 <div class="carousel-overlay"></div>
                 <img class="d-block w-100 img-fluid" src="./wp-content/themes/simplex-electrician/img/carousel/carousel-img-3.jpg" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>we can light everything</h3>    
-                    <h1>Nothing is <br>Impossible for Us!                       
-                </h1>
-</div>
+                <div class="carousel-caption ">
+                    <span class="carousel-sub-heading">we can light everything</span>    
+                    <h2 class="carousel-main-heading">Nothing is <br>Impossible for Us!</h2>                       
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#siteCarousel" role="button" data-slide="prev">
@@ -162,18 +162,26 @@ img.emoji {
             <span class="sr-only">Next</span>
         </a>
 	</div>
-</div>
+</div>  <!-- Carousel Ends Here  -->
+
+
 
 <div id="wrapper-about-us">
-    <div class="container about-us-top">
-        <div class="row">
-            <div class="col-lg-6 about-us-img">
-                <img src="./wp-content/themes/simplex-electrician/img/about-us-img-1.jpg" alt="">
-                <img class="img-top" src="./wp-content/themes/simplex-electrician/img/about-us-img-2.jpg" alt="">
+    <div class="container-md">
+        <div class="about-us-holder">
+            <div class="about-us-img">
+                <div class="about-us-img-main-holder">
+                    <img class="about-us-img-main" src="./wp-content/themes/simplex-electrician/img/about-us-img-1.jpg" alt="">
+                </div>
+                <div class="about-us-img-secondary-holder">
+                    <img class="about-us-img-secondary" src="./wp-content/themes/simplex-electrician/img/about-us-img-2.jpg" alt="">
+                </div>  
             </div>
-            <div class="col-lg-6 about-us-text">
-                <p class="section-title">About Us</p>
-                <h1>Outstanding Residential & Commercial Services</h1>
+            <div class="about-us-text">
+                <div class="section-sub-title">
+                    <span>About Us</span>
+                </div>
+                <h2 class="section-main-title">Outstanding Residential & Commercial Services</h2>
                 <p class="text-muted about-us-paragraph">All of our services are backed by our 100% satisfaction guarantee. Our electricians can install anything from new security lighting for your outdoors to a whole home generator that will keep your appliances working during a power outage.</p>
                 <div class="about-us-list list-group list-unstyled">
                     <li>
@@ -185,149 +193,116 @@ img.emoji {
                     <li>
 <i class="fas fa-check"></i> Virtually any electrical needs you have – just ask!</li>        
                 </div>
-                <div class="row about-us-personal">
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="col-5">
-                                <img src="./wp-content/themes/simplex-electrician/img/portrait.png" alt="portrait-owner">
-                            </div>
-                            <div class="col-7 d-flex flex-column justify-content-center pl-0">
-                                <h6>Shayekh Uddin
-                                <small class="text-muted ">
-                                    Master Electrician
-                                </small>
-                            </h6>
-</div>
-                            <div class="about-us-separator"></div>
-                        </div>
-                    </div>  
-                    <div class="col-lg-6">
-                        <small class="text-muted">Md. Shayekh Uddin is the sole owner of Simplex Electric Ltd and is a qualified and registered Electrician.</small>
-                    </div>                 
-                </div>
             </div>
-        </div>
+        </div>  
     </div>
 </div>
 
 
-<div id="wrapper-services-brief">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="services-brief-block col-lg-4 px-0">
-                <div class="services-brief-overlay"></div>
-                <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-1.jpg" alt="">
-                <div class="services-brief-description">
-                    <h3>Commercial</h3>
-                    <p>
-                        We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.
-                    </p>
-                </div>
-            </div>
-            <div class="services-brief-block col-lg-4 px-0">
-                <div class="services-brief-overlay"></div>
-                <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-2.jpg" alt="">
-                <div class="services-brief-description">
-                    <h3>Residential</h3>
-                    <p>
-                        We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.
-                    </p>
-                </div>
-            </div>
-            <div class="services-brief-block col-lg-4 px-0">
-                <div class="services-brief-overlay"></div>
-                <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-3.jpg" alt="">
-                <div class="services-brief-description">
-                    <h3>Industrial</h3>
-                    <p>
-                        We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.
-                    </p>
+<div id="wrapper-property-types">
+    <div class="container-fluid property-types-holder">
+        <div class="owl-carousel property-types-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-1.jpg" alt="">
+                        <div class="property-description">
+                            <h3 class="property-type-name">Commercial</h3>
+                            <p>We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</p>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-2.jpg" alt="">
+                        <div class="property-description">
+                            <h3>Commercial</h3>
+                            <p>We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</p>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <img src="./wp-content/themes/simplex-electrician/img/services-brief-img-3.jpg" alt="">
+                        <div class="property-description">
+                            <h3>Commercial</h3>
+                            <p>We offer the highest level of responsiveness and reliability, including on-line job management and reporting. Our highly experienced contractors across the nation ensure that your premises are always maintained and compliant.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+            
+
     </div>
 </div>
 
 <div id="wrapper-services">
     <div class="container">
-        <p class="section-title text-center">24/7 Electrician Services – Safe and Efficient</p>
-        <h1 class="text-center">We are a Full Service Electrical <br> Contractor</h1>
-        <div id="servicesCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-                <li data-target="#servicesCarousel" data-slide-to="0" class="active">
-                <li data-target="#servicesCarousel" data-slide-to="1">
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Electrical Services</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
+        <h2 class="section-main-title text-center">We are a Full Service Electrical <br> Contractor</h2>
+        
+        <div class="owl-carousel services-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Heating Services</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Air conditioning</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
                             </div>
                         </div>
-                    </div>      
+                    </div>
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card text-center">
+                            <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Electrical Services</h5>
+                                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-theme">More info</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-1.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Electrical Services</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-3.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Heating Services</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card text-center">
-                                <img class="card-img-top" src="./wp-content/themes/simplex-electrician/img/services-img-2.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Air conditioning</h5>
-                                    <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-theme">More info</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>                
             </div>
-	    </div>
+        </div>
 
     </div>
 </div>
@@ -335,7 +310,7 @@ img.emoji {
 <div id="wrapper-cta">
     <div class="container cta">
         <div class="cta-title">
-            <h1>Do you Need Help With Electrical Maintenance?</h1>
+            <h2 class="section-main-title">Do you <span class="heading-colored-part">Need Help</span> With Electrical Safety Inspection for your property?</h2>
         </div>
         <p class="text-muted">Our electrical repair and service options are proudly offered to clients. Give us a call today to schedule a free service estimate!</p>
          <button class="btn btn-theme"><i class="fas fa-bolt"></i> Give Us a Call</button>
@@ -344,226 +319,173 @@ img.emoji {
     </div>
 </div>
 
-<div id="wrapper-testimonial-stats">
-    <div class="container">      
-        <div class="statistics">
-            <div class="row d-flex flex-row justify-content-between">
-                <div>
-                    <p class="section-title">Our Statistics</p>
-                    <span>
-                        Some Important <br> Facts
-                    </span>         
-                </div>
-                <div>
-                <span>5000+</span>
-                    <p class="item-row-2">Residential Projects</p>
-                </div>
-                <div>
-                    <span>1500+</span>
-                    <p class="item-row-2">Commercial Projects</p>
-                </div>
-                <div>
-                    <span>1000+</span>
-                    <p class="item-row-2">Industrial Projects</p>
-                </div> 
-            </div> 
-        </div>
-    </div>
-    <div class="testimonial">
-        <div class="testimonial-text">
-            <p class="section-title">What Our Clients Say</p>
-            <h1>Professional, Reliable <br> & Cost Effective</h1>
-            <blockquote class="text-muted"> 
-                We've been using your company and from the very beginning found him and his team to be extremely professional and knowledgeable . We wouldn't have any hesitation in recommending their services.
-            </blockquote>
-            <cite>- Teresa & Kevin K.</cite>
 
-            <div class="emergency-service">
-                <h4>Emergency Service</h4>
-                <p class="text-center">If this is an emergency outside of normal business hours, call us</p>
-                <a href="tel:+44 07383 996436">+44 07383 996436</a>
+
+<div id="wrapper-testimonial">
+        <div class="container-md">
+            <div class="testimonial-content-holder">
+                <div class="testimonial-text col-md-7">
+                    <div class="section-sub-title">
+                        <span>What Our Clients Say</span>
+                    </div>
+
+                    <div class="owl-carousel testimonial-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item">
+                                    <h2 class="section-main-title">Professional, Reliable <br> & Cost Effective</h2>
+                                    <blockquote class="text-muted"> 
+                                        We've been using your company and from the very beginning found him and his team to be extremely professional and knowledgeable . We wouldn't have any hesitation in recommending their services.
+                                    </blockquote>
+                                </div>
+                                <div class="owl-item">
+                                    <h2 class="section-main-title">Lorem Ipsum Dolor <br> Sit Amet</h2>
+                                    <blockquote class="text-muted"> 
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    </blockquote>
+                                </div>
+                                <div class="owl-item">
+                                    <h2 class="section-main-title"> Consectetur Adipiscing Elit, <br> Sed do Eiusmod </h2>
+                                    <blockquote class="text-muted"> 
+                                        When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                                    </blockquote>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="testimonial-background-img"></div>
             </div>
         </div>
-        
     </div>
-    
-</div>
+
+
+
 
 <div id="wrapper-pricing">
     <div class="container">
-        <p class="section-title text-center">Save on Service You Need</p>
-        <h1 class="text-center">Maintenance Plans</h1>
-        <p class="text-muted section-description">With an electrical maintenance plan, you won’t find yourself in a panic wondering who to call when you’re having problems with your electrical system.</p>
-        
-        <div id="pricingCarousel" class="carousel slide" data-ride="carousel">
-            <!-- <ol class="carousel-indicators">
-                <li data-target="#pricingCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#pricingCarousel" data-slide-to="1"></li>
-                <li data-target="#pricingCarousel" data-slide-to="2"></li>
-            </ol> -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/home-icon.svg" alt="Card image cap">
-                                <div class="card-body"> 
-                                    <h4 class="card-title">Domestic Installations</h4>
-                                    <ul class="list-unstyled text-muted">
-                                        <li>
-<i class="fas fa-check"></i> Indoor/outdoor Lighting Installation</li>
-                                        <li>
-<i class="fas fa-check"></i> Appliance &amp; Fixture Installation</li>
-                                        <li>
-<i class="fas fa-check"></i> Annual Electrical Inspection</li>
-                                        <li>
-<i class="fas fa-check"></i> Ceiling Fan Installation</li>
-                                        <li>
-<i class="fas fa-check"></i> New &amp; Replacement Wiring</li>
-                                        <li>
-<i class="fas fa-check"></i> Surge Protection Maintenance</li>
-                                        <li>
-<i class="fas fa-check"></i> 24-hour Response</li>
-                                    </ul>
-                                    <div class="bottom-border"></div>
-                                    <h2>&#163;89.00</h2>
-                                    <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+        <h2 class="text-center section-main-title">Services</h2>
+        <div class="owl-carousel pricing-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <div class="card">
+                            <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/home-icon.svg" alt="">
+                            <div class="card-body"> 
+                                <h4 class="card-title">Domestic Installations</h4>
+                                <ul class="list-unstyled text-muted">
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>Indoor/outdoor Lighting Installation</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>Appliance &amp; Fixture Installation</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>Annual Electrical Inspection</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>Ceiling Fan Installation</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>New &amp; Replacement Wiring</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>Surge Protection Maintenance</span>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-check"></i></span>
+                                        <span>24-hour Response</span>
+                                    </li>
+                                </ul>
+                                <div class="bottom-border"></div>
+                                <div class="prices text-center">
+                                    &#163;89.00
                                 </div>
+                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/fuse-box.svg" alt="Card image cap">
-                                <div class="card-body"> 
-                                    <h4 class="card-title">Commercial Installations</h4>
-                                    <ul class="list-unstyled text-muted">
-                                        <li>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card">
+                            <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/home-icon.svg" alt="">
+                            <div class="card-body"> 
+                                <h4 class="card-title">Domestic Installations</h4>
+                                <ul class="list-unstyled text-muted">
+                                    <li>
 <i class="fas fa-check"></i> Indoor/outdoor Lighting Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Appliance &amp; Fixture Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Annual Electrical Inspection</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Ceiling Fan Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> New &amp; Replacement Wiring</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Surge Protection Maintenance</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> 24-hour Response</li>
-                                    </ul>
-                                    <div class="bottom-border"></div>
-                                    <h2>&#163;129.00</h2>
-                                    <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+                                </ul>
+                                <div class="bottom-border"></div>
+                                <div class="prices text-center">
+                                    &#163;89.00
                                 </div>
+                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/electric-grid.svg" alt="Card image cap">
-                                <div class="card-body"> 
-                                    <h4 class="card-title">Industrial Installations</h4>
-                                    <ul class="list-unstyled text-muted">
-                                        <li>
+                    </div>
+                    <div class="owl-item">
+                        <div class="card">
+                            <img class="small-icon" src="./wp-content/themes/simplex-electrician/img/home-icon.svg" alt="">
+                            <div class="card-body"> 
+                                <h4 class="card-title">Domestic Installations</h4>
+                                <ul class="list-unstyled text-muted">
+                                    <li>
 <i class="fas fa-check"></i> Indoor/outdoor Lighting Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Appliance &amp; Fixture Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Annual Electrical Inspection</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Ceiling Fan Installation</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> New &amp; Replacement Wiring</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> Surge Protection Maintenance</li>
-                                        <li>
+                                    <li>
 <i class="fas fa-check"></i> 24-hour Response</li>
-                                    </ul>
-                                    <div class="bottom-border"></div>
-                                    <h2>&#163;149.00</h2>
-                                    <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+                                </ul>
+                                <div class="bottom-border"></div>
+                                <div class="prices text-center">
+                                    &#163;89.00
                                 </div>
+                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
             </div>
-            <!-- <a class="carousel-control-prev" href="#pricingCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#pricingCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a> -->
+            
         </div>
+        
     </div>
 </div>
 
-<div id="wrapper-cta-bottom">
-    <div class="container cta-bottom">
-        <div class="cta-bottom-title">
-            <h1>Your Best Option in Electrical Contractors 24/7</h1>
-        </div>
-        <p class="text-muted">Our electrical repair and service options are proudly offered to clients. Give us a call today to schedule a free service estimate!</p>
-         <button class="btn btn-theme"><i class="fas fa-bolt"></i> Give Us a Call</button>
-         <button class="btn btn-theme-alt"><i class="fas fa-bolt"></i> Free Estimate</button>
-                
-    </div>
-</div>
 
-<div id="wrapper-certification">
-    <div class="container ">
-        <div class="row d-flex justify-content-center align-items-center">
-           <div class="cert-heading">
-               Certified By
-           </div>
-           <div class="napit-logo">
-               <img src="./wp-content/themes/simplex-electrician/img/napit.png" alt="">
-           </div>
-           <div class="registration-text">
-               <div>
-                   Registration No
-               </div>
-               <div>
-                   2120937897126
-               </div>
-           </div>
-        </div>
-    </div>
-</div>
 
 
 
 
 <div class="wrapper" id="wrapper-footer">
 
-	
-
-	<div class="footer-top">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					24/Hour Emergency Service
-				</div>
-				<div class="col-lg-1">
-					.
-				</div>
-				<div class="col-lg-3">
-					Free Consultations	
-				</div>
-				<div class="col-lg-1">
-					.
-				</div>
-				<div class="col-lg-3">
-				+44 07383 996436	
-				</div>
-				
-			</div>
-		</div>	
-	</div>
 
 	<div class="footer-bottom">
 		<div class="container">
@@ -638,6 +560,88 @@ img.emoji {
 
 <script src="./wp-content/themes/simplex-electrician/js/theme.min.js?ver=0.9.4.1613932044" id="understrap-scripts-js"></script>
 <script src="./wp-includes/js/wp-embed.min.js?ver=5.6.2" id="wp-embed-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+<script type="text/javascript">	
+	$(document).ready(function(){
+  		$(".services-carousel").owlCarousel({
+			lazyLoad:true,
+			margin:30,
+			nav:true,
+			navText:["<div class='nav-btn prev-slide'><i class='fas fa-chevron-left'><\/i><\/div>","<div class='nav-btn next-slide'><i class='fas fa-chevron-right'><\/i><\/div>"],
+			responsive:{
+			0:{
+				items:1,
+				loop:true,
+			},
+			768:{
+				items:2,
+				loop:true,
+			},
+			992:{
+				items:3,
+				loop:false,
+			}
+				
+			}
+		  });
+	});
+
+	$(document).ready(function(){
+  		$(".property-types-carousel").owlCarousel({
+			lazyLoad:true,
+			responsive:{
+			0:{
+				items:1,
+				loop:true,
+			},
+			768:{
+				items:2,
+				loop:true,
+			},
+			992:{
+				items:3,
+				loop:false,
+			}
+				
+			}
+		  });
+	});
+
+	$(document).ready(function(){
+  		$(".pricing-carousel").owlCarousel({
+			lazyLoad:true,
+			margin:30,
+			responsive:{
+				0:{
+					items:1,
+					loop:true,
+				},
+				768:{
+					items:2,
+					loop:true,
+				},
+				992:{
+					items:3,
+					loop:false,
+				}	
+			}
+		  });
+	});
+	$(document).ready(function(){
+  		$(".testimonial-carousel").owlCarousel({
+			lazyLoad:true,
+			responsive:{
+				0:{
+					items:1,
+					loop:true,
+				}
+			}
+		  });
+	});
+</script>
 
 </body>
 
