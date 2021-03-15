@@ -1,0 +1,77 @@
+#wrapper-about-us{
+    margin-top: 120px;
+    @include responsive (tablet){
+        margin-top: 75px;   
+    } 
+    .about-us-holder{
+        display: flex;
+        flex-wrap: nowrap;
+        position: relative;
+        @include responsive (desktop){
+               
+        } 
+        
+        .about-us-img{
+            width: 58%;  
+            position: relative;
+            height: max-content;
+            @include responsive (tablet){
+                width: 100%;
+            } 
+            .about-us-about-us-img-main-holder{
+                width: 100%;
+            }
+            .about-us-img-secondary-holder{
+                position: absolute;
+                bottom: -40px;
+                left: -40px;
+                .about-us-img-secondary{
+                    max-width: 370px;
+                    height: auto;
+                    @include responsive (desktop){
+                        max-width: 300px;
+                    }
+                    @include responsive (laptop){
+                        max-width: 270px;
+                    }
+                    @include responsive (laptop){
+                        max-width: 330px;
+                        height: auto;
+                    } 
+                }
+                
+            }
+        }
+    
+        .about-us-text{
+            width: 49%;
+            background-color: #fff;
+            padding: 70px 0 0 70px;
+            margin: 5% 0px 0 -7%;
+            z-index: 1;
+            @include responsive (tablet){
+                margin-top: 75px!important;
+                width: 100%;
+                background-color: #fff;
+                padding: 40px 0 0px 0px;
+                margin: 15px 0 0 15px;
+                z-index: 1;
+            } 
+            .about-us-paragraph{
+                margin-bottom: 25px;
+                font-family: $secondary-font-family;
+            }
+            .about-us-list{
+                font-family: $secondary-font-family;
+                li{
+                    color: $secondary;
+                    margin-bottom: 10px;
+                    i{
+                        margin-right: 10px;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

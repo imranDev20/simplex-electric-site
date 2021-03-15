@@ -1,0 +1,58 @@
+@import "./mediaQueries";
+
+body{
+    #page{
+        overflow-x: hidden;
+    }
+    font-family: $primary-font-family;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+//section titles
+.section-main-title{
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: $secondary;
+    @include responsive (laptop){
+        font-size: 1.5rem;
+    } 
+}
+
+.section-sub-title{
+    color:$primary;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    @include responsive (desktop){
+        font-size: 1rem;
+    }
+    @include responsive (laptop){
+        font-size: .8rem;
+    }
+
+}
+
+.heading-colored-part{
+    color: $primary;
+}
+
+
+//owl-carousel styles
+.owl-item {
+    opacity: 0;
+    transition: opacity 1s;
+ }
+.owl-item.active {
+    opacity: 1;
+}
+
+.owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span{
+    background: $primary!important;
+}
+
+
+

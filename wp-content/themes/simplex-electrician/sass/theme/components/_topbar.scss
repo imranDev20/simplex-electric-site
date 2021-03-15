@@ -1,0 +1,65 @@
+@import "./mediaQueries";
+
+#wrapper-topbar{  
+    padding: 10px 0;
+    background: $secondary;
+    color: white;
+    font-size: .85rem;
+    @include responsive (laptop){
+        padding: 10px 0 0 0;
+        
+    }
+    #topbar-hide-toggle{
+        @include responsive (laptop){
+            
+        }
+        .top-bar-info{
+            display: flex;
+            align-items: center;
+            @include responsive (laptop){
+                padding: 10px 20px;
+            }
+            i{  
+                margin-right: 15px;
+                color: $primary;
+            }
+            
+        }
+        .top-bar-info.alt{
+            a{
+                font-weight: 600;
+                &:hover{
+                    text-decoration: none;
+                    color: $primary;         
+                }
+    
+                i{
+                    color: white;
+                }
+            }     
+        }
+    }
+    .topbar-slide{
+        display: none;
+        i{
+            padding: 10px 50px;
+        }
+        @include responsive (laptop){
+            display: flex;
+            justify-content: center;
+            background-color: $secondary;
+            button{
+                color: white;
+                background-color: $secondary;
+                outline: none;
+                border: none;
+                :focus{
+                    outline: none;
+                    box-shadow: none!important;
+                }
+            }
+        }
+    }
+}
+
+

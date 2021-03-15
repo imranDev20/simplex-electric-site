@@ -1,0 +1,251 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import "./components/topbar" ;
+@import "./components/navbar";
+@import "./components/carousel";
+@import "./components/about-us";
+@import "./components/property-types";
+@import "./components/services";
+@import "./components/cta";
+@import "./components/testimonial";
+@import "./components/pricing";
+@import "./components/footer";
+@import "./components/mixins";
+@import "./components/global";
+
+@import "./components/mediaQueries";
+
+
+
+// For large Screens || Laptops, Desktops
+@media only screen and(max-width:1200px) {
+    
+
+    
+    
+}
+
+
+@media only screen and( max-width:992px ){
+
+}
+
+
+
+@media only screen and(max-width:768px){
+ 
+
+    #wrapper-testimonial{
+        
+        .testimonial-content-holder{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            .testimonial-text{
+                
+                &::before{
+                    position: absolute;
+                    content: "";
+                    display: none;
+                    right: 99%;
+                    top: 0;
+                    bottom: 0;
+                    width: 100vw;
+                    background: white;
+                }
+
+            }
+            .testimonial-background-img{
+                
+            }
+        }
+    }
+    
+    
+
+}
+
+@media only screen and(max-width:600px){
+    
+
+    #wrapper-about-us{
+        margin-top: 120px;
+    
+        .about-us-holder{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+           
+            .about-us-img{
+                width: 100%;
+                position: relative;
+                .about-us-about-us-img-main-holder{
+                    width: 100%;
+                }
+                .about-us-img-secondary-holder{
+                    position: absolute;
+                    bottom: -25px;
+                    left: -25px;
+                    .about-us-img-secondary{
+                        max-width: 270px;
+                        height: auto;
+                        
+                    }
+                    
+                }
+            }
+        
+            .about-us-text{
+                width: 100%;
+                background-color: #fff;
+                padding: 40px 0 0 0;
+                margin: 15px 0 0 15px;
+                z-index: 1;
+                .about-us-paragraph{
+                    margin-bottom: 25px;
+                    font-family: $secondary-font-family;
+                }
+                .about-us-list{
+                    font-family: $secondary-font-family;
+                    li{
+                        color: $secondary;
+                        margin-bottom: 10px;
+                        i{
+                            margin-right: 10px;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #wrapper-cta{
+        margin-top: 120px;
+        background-image: url("../img/cta-img.jpg");
+        height: 600px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        
+        color: white;
+        .cta{
+            background-color: #fff;
+            width: 90%;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+    
+            .cta-title{
+                position: relative;
+                border-left: 5px solid $primary;
+                color: $secondary;
+                padding-left: 40px;
+                
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            .btn-theme,.btn-theme-alt{
+                padding: 10px 15px;
+                font-size: .8rem;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+        
+    }
+    
+    
+}
+
+@media only screen and(max-width:480px){
+    #wrapper-navbar{     
+        #main-nav{  
+            
+            ul{
+                li{
+                    a{
+                        font-size: .8rem;
+                        padding-top: 15px;
+                        padding-bottom: 15px;     
+                    }
+                    .dropdown-menu{
+                        border: none;
+                        padding: 0;
+                        margin: 0;
+                        box-shadow: 0 0 16px 0 rgba(0,0,0,0.2);
+                        li{
+                            :hover{
+                                background: none;
+                            }
+                        }
+                        a{
+                            padding: 12px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+   
+
+    #wrapper-about-us{
+        margin-top: 120px;
+    
+        .about-us-holder{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+           
+            .about-us-img{
+                width: 100%;
+                position: relative;
+                .about-us-about-us-img-main-holder{
+                    width: 100%;
+                }
+                .about-us-img-secondary-holder{
+                    position: absolute;
+                    bottom: -25px;
+                    left: -25px;
+                    .about-us-img-secondary{
+                        max-width: 210px;
+                        height: auto;
+                        
+                    }
+                    
+                }
+            }
+        
+            .about-us-text{
+                width: 100%;
+                background-color: #fff;
+                padding: 40px 0 0 0;
+                margin: 15px 0 0 15px;
+                z-index: 1;
+                .about-us-paragraph{
+                    margin-bottom: 25px;
+                    font-family: $secondary-font-family;
+                }
+                .about-us-list{
+                    font-family: $secondary-font-family;
+                    li{
+                        color: $secondary;
+                        margin-bottom: 10px;
+                        i{
+                            margin-right: 10px;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+
+}

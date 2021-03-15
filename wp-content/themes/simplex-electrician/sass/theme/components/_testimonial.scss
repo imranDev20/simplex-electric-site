@@ -1,0 +1,92 @@
+#wrapper-testimonial{
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    @include responsive (tablet){
+    }
+    
+    .testimonial-content-holder{
+        display: flex;
+        @include responsive (tablet){
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        .testimonial-text{
+            position: relative;
+            top: 100px;
+            left:0;
+            padding: 70px 70px;
+            background-color: white;
+            z-index: 1;
+            min-width: 50%!important;
+            @include responsive (tablet){
+                position: static;
+                padding: 30px 30px;
+            }
+            .section-sub-title{
+                position: relative;
+                &::after{
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f10d";
+                    font-size: 4rem;
+                    display: inline-block;
+                    padding-right: 3px;
+                    vertical-align: middle;
+                    font-weight: 900;
+                    position: absolute;
+                    left: -80px;
+                    top: 20px;
+                    @include responsive (tablet){
+                        font-size: 3rem;
+                        left: -20px;
+                        top: 15px;
+                    }
+                }
+            }
+            .section-main-title{
+                @include responsive (tablet){
+                    margin-left: 40px;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                display: block;
+                right: 99%;
+                top: 0;
+                bottom: 0;
+                width: 100vw;
+                background: white;
+                @include responsive (tablet){
+                    display: none;
+                }
+            }
+    
+            blockquote{
+                font-family: $secondary-font-family;
+            }
+        }
+    
+        .testimonial-background-img{
+            background-image: url(../img/testimonial-img.jpg);
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            right: 0;
+            width: 59.8%;
+            height: 500px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 84% top;
+            @include responsive (tablet){
+                position: relative;
+                width: auto;
+                background-position: top;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+        }
+    }
+    
+}

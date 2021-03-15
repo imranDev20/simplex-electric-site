@@ -1,0 +1,23 @@
+#wrapper-property-types{
+    margin-top: 120px;
+    .property-types-holder{
+        padding-left: 0;
+        padding-right: 0;
+        .owl-item{
+            position: relative;
+            .property-description{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                .property-type-name{
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+    
+}

@@ -1,0 +1,18 @@
+.btn-theme{
+    background: $primary;
+    color: white;
+    &:hover{
+        background: white;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}
+.btn-theme-alt{
+    background: $secondary;
+    color: white;
+    &:hover{
+        background: white;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+}

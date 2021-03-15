@@ -1,0 +1,47 @@
+#wrapper-pricing{
+    margin-top: 220px;
+    .owl-stage-outer{
+        overflow: visible;
+        
+        .card{
+            padding: 35px 13px 15px 13px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+            .small-icon{
+                height: 50px;
+            }
+            .card-body{
+                .card-title{
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    color: $secondary;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                ul{
+                    font-family: $secondary-font-family;
+                    margin-bottom: 40px;
+                    li{
+                        padding: 5px 0;
+                        justify-content: space-between;
+                        i{
+                            color: $primary;
+                            margin-right: 10px;
+                            font-size: .7rem;
+                        }
+                    }
+                }
+                .bottom-border{
+                    height: 1px;
+                    width: 100%;
+                    background-color: lighten($text-muted, 45%) ;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                
+            }
+        }
+    }
+    
+}

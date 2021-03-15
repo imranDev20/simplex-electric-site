@@ -1,0 +1,36 @@
+#wrapper-cta{
+    margin-top: 120px;
+    background-image: url("../img/cta-img.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    color: white;
+    .cta{
+        background-color: white;
+        width: 600px;
+        padding: 80px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15%;
+
+        .cta-title{
+            position: relative;
+            border-left: 5px solid $primary;
+            color: $secondary;
+            padding-left: 40px;
+            
+        }
+        p{
+            margin-bottom: 50px;
+        }
+        .btn-theme,.btn-theme-alt{
+            padding: 10px 15px;
+            margin-right: 20px;
+        }
+    }
+    
+}

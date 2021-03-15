@@ -1,0 +1,45 @@
+#wrapper-services{
+    margin-top: 120px;
+    .services-carousel{
+        position: relative;
+        .nav-btn{
+            height: 47px;
+            position: absolute;
+            width: 26px;
+            cursor: pointer;
+            top: 40% !important;
+            transform: translateY(-40%);
+        }
+        .owl-prev.disabled,
+        .owl-next.disabled{
+            pointer-events: none;
+            opacity: 0.2;
+        }
+        .prev-slide{
+            left: 0;
+            i{
+                font-size: 2.5rem;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                padding: 80% 10px;
+                border-radius: 2px;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .next-slide{
+            right: 17px;
+            i{
+                font-size: 2.5rem;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                padding: 80% 10px;
+                border-radius: 2px;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
