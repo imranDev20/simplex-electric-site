@@ -7,7 +7,11 @@
             padding: 35px 13px 15px 13px;
             border: none;
             border-radius: 5px;
-            box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+            box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+            transition: .5s all;
+            &:hover{
+                box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+            }
             .small-icon{
                 height: 50px;
             }
@@ -43,5 +47,9 @@
             }
         }
     }
-    
+    .pricing-link{
+        text-align: center;
+        margin-top: 50px;
+        font-weight: 600;
+    }
 }

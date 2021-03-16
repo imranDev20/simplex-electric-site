@@ -1,23 +1,59 @@
 #wrapper-property-types{
     margin-top: 120px;
     .property-types-holder{
+        position: relative;
         padding-left: 0;
         padding-right: 0;
-        .owl-item{
-            position: relative;
+        .content-holder{
+            .overlay{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                opacity: 0.4;
+                z-index: 1;
+              }
+            img{
+                height: 75vh;
+            }
+            
             .property-description{
                 position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                z-index: 1;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);
                 color: white;
-                text-align: center;
+                transform: translate(-50%, -50%);
                 .property-type-name{
+                    text-align: center;
                     font-weight: 600;
+                    font-size: 2.5rem;
+                }
+                .property-text{
+                    display: none;
+                }
+                
+                .property-button{
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: orange;
+                    color: white;
+                }
+            }
+            .property-description.active{
+                .property-text{
+                    display: block;
                 }
             }
         }
-
     }
     
 }
+
