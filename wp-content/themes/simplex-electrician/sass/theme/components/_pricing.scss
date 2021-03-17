@@ -1,49 +1,59 @@
 #wrapper-pricing{
     margin-top: 220px;
+    .section-main-title{
+        margin-bottom: 50px;
+    }
     .owl-stage-outer{
         overflow: visible;
         
-        .card{
-            padding: 35px 13px 15px 13px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-            transition: .5s all;
-            &:hover{
-                box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-            }
-            .small-icon{
-                height: 50px;
-            }
-            .card-body{
-                .card-title{
-                    font-size: 1.3rem;
-                    font-weight: 600;
-                    color: $secondary;
-                    text-align: center;
-                    margin-bottom: 40px;
-                }
-                ul{
-                    font-family: $secondary-font-family;
-                    margin-bottom: 40px;
-                    li{
-                        padding: 5px 0;
-                        justify-content: space-between;
-                        i{
-                            color: $primary;
-                            margin-right: 10px;
-                            font-size: .7rem;
+        .owl-stage{
+            display: flex;
+            .owl-item{
+                display: flex;
+                justify-content: center;
+                .card{
+                    padding: 35px 13px 15px 13px;
+                    border: none;
+                    border-radius: 5px;
+                    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+                    transition: .5s all;
+                    &:hover{
+                        box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+                    }
+                    .small-icon{
+                        height: 50px;
+                    }
+                    .card-body{
+                        display: flex;
+                        flex-direction: column;
+                        .card-title{
+                            font-size: 1.3rem;
+                            font-weight: 600;
+                            color: $secondary;
+                            text-align: center;
+                            margin-bottom: 40px;
                         }
+                        ul{
+                            font-family: $secondary-font-family;
+                            margin-bottom: 40px;
+                            li{
+                                padding: 5px 0;
+                                justify-content: space-between;
+                                display: flex;
+                                justify-content: flex-start;
+                                i{
+                                    color: $primary;
+                                    margin-right: 10px;
+                                    font-size: .7rem;
+                                }
+                            }
+                        }
+                        button{
+                            margin-top: auto;
+                        }
+                        
                     }
                 }
-                .bottom-border{
-                    height: 1px;
-                    width: 100%;
-                    background-color: lighten($text-muted, 45%) ;
-                    margin-top: 20px;
-                    margin-bottom: 10px;
-                }
-                
             }
         }
     }
