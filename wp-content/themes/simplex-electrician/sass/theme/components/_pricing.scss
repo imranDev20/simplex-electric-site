@@ -48,8 +48,9 @@
                                 }
                             }
                         }
-                        button{
+                        .btn{
                             margin-top: auto;
+                            @include button($primary);
                         }
                         
                     }

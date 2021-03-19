@@ -1,6 +1,5 @@
-@import "./button";
 @import "./mediaQueries";
-
+@import "./mixins";
 
 #wrapper-navbar{
     
@@ -79,16 +78,11 @@
                 }
             }
         }
-        .nav-button{
-            .btn-theme{
+        .modal-button{
+            .btn{
+                @include button($primary);
                 padding: 10px 15px;
-                @include responsive (desktop){
-                    padding: 7px 10px;
-                    font-size: .9rem;
-                 }
-            }
-            .btn-theme-alt{
-                padding: 10px 15px;
+
                 @include responsive (desktop){
                     padding: 7px 10px;
                     font-size: .9rem;

@@ -1,1 +1,10 @@
- 
+@mixin button ($color) {
+        background: $color;
+        color: white;
+        &:hover{
+            background: white;
+            color: $primary;
+            border: 1px solid $primary;
+        }
+    
+}

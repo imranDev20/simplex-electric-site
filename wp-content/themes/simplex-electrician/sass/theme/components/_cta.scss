@@ -27,10 +27,15 @@
         p{
             margin-bottom: 50px;
         }
-        .btn-theme,.btn-theme-alt{
+        .btn{
             padding: 10px 15px;
             margin-right: 20px;
+            @include button($primary);
+            &.alt{
+                @include button($secondary);
+            }
         }
+        
     }
     
 }

@@ -1,3 +1,6 @@
+@import "./mediaQueries";
+@import "./mixins";
+
 #wrapper-carousel{
     position: relative;
     .owl-stage-outer{
@@ -97,20 +100,73 @@
     }
 
     .mobile-quote-container{
-        position: relative;
-        a{
-            position: absolute;
-            display: none;
-            left: 50%;
-            bottom: -100%;
-            transform: translateX(-50%);
-            bottom: 0;
-            z-index: 10;
-            @include responsive (laptop){
-                display: block;
-            } 
+        .mobile-quote-button{
+            position: relative;
+            a{
+                position: absolute;
+                display: none;
+                left: 50%;
+                bottom: -100%;
+                transform: translateX(-50%);
+                bottom: 0;
+                z-index: 10;
+                @include responsive (laptop){
+                    display: block;
+                }
+
+                i{
+                    font-size: .8rem
+                }
+            }
+            .btn{
+                @include button($primary);
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                &:focus{
+                    background: $primary;
+                    color: white;
+                    box-shadow: unset;
+                }
+                &:hover{
+                    background: $primary;
+                    color: white;
+                }
+            }
+            
         }
-        
+        .mobile-quote{
+            .card{
+                background-color: $secondary;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                input{
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        font-size: .9rem;
+                      }
+                      &::-moz-placeholder { /* Firefox 19+ */
+                        font-size: .9rem;
+                      }
+                      &:-ms-input-placeholder { /* IE 10+ */
+                        font-size: .9rem;
+                      }
+                      &:-moz-placeholder { /* Firefox 18- */
+                        font-size: .9rem;
+                      }
+                }
+                .btn{
+                    @include button ($primary);
+                    &:hover{
+                        border: 1px solid transparent;
+                    }
+                    &:focus{
+                        border: 1px solid transparent;
+                    }
+                    i{
+                        font-size: .8rem
+                    }
+                }
+            }
+        }
     }
     
 }

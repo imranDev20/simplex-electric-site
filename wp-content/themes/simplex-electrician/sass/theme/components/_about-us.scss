@@ -1,3 +1,6 @@
+@import "./mediaQueries";
+
+
 #wrapper-about-us{
     margin-top: 120px;
     @include responsive (tablet){

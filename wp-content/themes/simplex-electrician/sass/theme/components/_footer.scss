@@ -18,6 +18,10 @@
             margin-bottom: 10px;
             color: white;
             text-decoration: none;
+            transition: .3s color;
+            &:hover{
+                color: $primary;
+            }
         }
         .footer-left-bottom-section{
             margin-bottom: 30px;
@@ -48,6 +52,11 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
+                transition: .3s all ease;
+                &:hover{
+                    background: $primary;
+                    color: white;
+                }
             }
         }
         .copyright-text{

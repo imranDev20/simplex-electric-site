@@ -18,18 +18,6 @@
 
 	<!-- Font Awesome CDN Link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
-
-		<!-- Smartsupp Live Chat script -->
-	<script type="text/javascript">
-		var _smartsupp = _smartsupp || {};
-		_smartsupp.key = '955bafd5529589b8bc2152a9d802ac3f424b383e';
-		window.smartsupp||(function(d) {
-		var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-		s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-		c.type='text/javascript';c.charset='utf-8';c.async=true;
-		c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-		})(document);
-	</script>
 	
 	<title>Simplex Electrical &#8211; For your electrical needs&#8230;</title>
 <meta name="robots" content="max-image-preview:large">
@@ -54,7 +42,7 @@ img.emoji {
 }</style>
 	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=5.7" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4" media="all">
-<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1616162463" media="all">
+<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1616178325" media="all">
 <script src="./wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="./wp-json/index.html">
@@ -95,7 +83,7 @@ img.emoji {
 			
 		</div>
 		<div class="topbar-slide">
-			<button class="" type="button" data-toggle="collapse" data-target="#topbar-hide-toggle">
+			<button class="btn" type="button" data-toggle="collapse" data-target="#topbar-hide-toggle">
 				<i class="fas fa-angle-double-down"></i>
 			</button>
 		</div>	
@@ -128,8 +116,8 @@ img.emoji {
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item"><a title="Gallery" href="#" class="nav-link">Gallery</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="Contact" href="#" class="nav-link">Contact</a></li>
 </ul></div>
-				<div class="nav-button d-none d-lg-block">
-					<button type="button" class="btn btn-theme" data-toggle="modal" data-target="#modalForm">
+				<div class="modal-button d-none d-lg-block">
+					<button type="button" class="btn" data-toggle="modal" data-target="#modalForm">
 						<i class="fas fa-bolt"></i> Appointment
 					</button>
 					
@@ -174,6 +162,8 @@ img.emoji {
 <!-- end custom logo -->
 
 
+
+<!-- Carousel Starts Here -->
 <div id="wrapper-carousel">
     <div class="owl-carousel hero-carousel owl-theme owl-loaded">
         <div class="owl-stage-outer">
@@ -205,31 +195,37 @@ img.emoji {
             </div>
         </div>
     </div>
+<!-- Image Slider Ends -->
 
 
 
     <!-- Request A Quote visible only on phone -->
 
     <div class="mobile-quote-container">
-        <a class="btn btn-theme" data-toggle="collapse" href="#quoteCollapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-chevron-down"></i> Request A Quote</a>
-    </div>
-    <div class="mobile-quote">
-        <div class="collapse" id="quoteCollapse">
-        
-            <div class="card card-body">
-                
+        <div class="mobile-quote-button">
+            <a class="btn" data-toggle="collapse" href="#quoteCollapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-chevron-down"></i> Request A Quote</a>
+        </div>
+        <div class="mobile-quote">
+            <div class="collapse" id="quoteCollapse">
+            
+                <div class="card card-body">
+                    
 
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Your Email">
-                    </div>
-                    <button type="submit" class="btn btn-theme btn-block">Submit</button>
-                </form>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                        <button type="submit" class="btn btn-block"><i class="fas fa-bolt"></i> Submit</button>
+                    </form>
 
 
+                </div>
             </div>
         </div>
     </div>
@@ -238,6 +234,7 @@ img.emoji {
 
 
 
+<!-- About Us Starts Here -->
 <div id="wrapper-about-us">
     <div class="container-md">
         <div class="about-us-holder">
@@ -269,6 +266,7 @@ img.emoji {
         </div>  
     </div>
 </div>
+<!-- About Us Ends -->
 
 
 <div id="wrapper-property-types">
@@ -337,7 +335,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">Electrical Installation Condition Report (EICR)</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -347,7 +345,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">PAT Test</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -357,7 +355,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">Consumer Unit</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -367,7 +365,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">New Wiring</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -377,7 +375,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">Fire Alarm</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -387,7 +385,7 @@ img.emoji {
                             <div class="card-body">
                                 <h5 class="card-title">Lighting</h5>
                                 <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-theme">More info</a>
+                                <a href="#" class="btn">More info</a>
                             </div>
                         </div>
                     </div>
@@ -404,8 +402,8 @@ img.emoji {
             <h2 class="section-main-title">Do you <span class="heading-colored-part">Need Help</span> With Electrical Safety Inspection for your property?</h2>
         </div>
         <p class="text-muted">Our electrical repair and service options are proudly offered to clients. Give us a call today to schedule a free service estimate!</p>
-         <button class="btn btn-theme"><i class="fas fa-bolt"></i> Give Us a Call</button>
-         <button class="btn btn-theme-alt"><i class="fas fa-bolt"></i> Free Estimate</button>
+         <button class="btn"><i class="fas fa-bolt"></i> Give Us a Call</button>
+         <button class="btn alt"><i class="fas fa-bolt"></i> Free Estimate</button>
                 
     </div>
 </div>
@@ -501,7 +499,7 @@ img.emoji {
                                     </li>
                                 </ul>
                                
-                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+                                <button class="btn btn-sm">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -545,7 +543,7 @@ img.emoji {
                                     </li>
                                 </ul>
                                 
-                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+                                <button class="btn btn-sm">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -585,7 +583,7 @@ img.emoji {
                                     </li>
                                 </ul>
                                
-                                <button class="btn btn-theme btn-block btn-sm">Order Now</button>
+                                <button class="btn btn-sm">Order Now</button>
                             </div>
                         </div>
                     </div>
@@ -600,7 +598,7 @@ img.emoji {
 
 
 <div id="fixed-button">
-    <a class="btn btn-theme" href="tel:+4407383996436"><i class="fas fa-phone-alt"></i></a> 
+    <a class="btn" href="tel:+4407383996436"><i class="fas fa-phone-alt"></i></a> 
 </div>
 
 
@@ -648,7 +646,24 @@ img.emoji {
 				</div>
 
 				<div class="col-lg-4 ">
-					<img src="./wp-content/themes/simplex-electrician/img/map-image.png" alt="">
+					
+
+				<div style="width: 100%">
+					<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=Micro%20Business%20Park,%2046-50%20Greatorex%20Street,%20London+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					
+					
+				</div>
+
+
+
+
+
+
+
+
+
+
+
 					<div class="footer-social">
 						<a href="#"><i class="fab fa-facebook-f"></i></a>
 						<a href="#"><i class="fab fa-twitter"></i></a>
@@ -675,18 +690,7 @@ img.emoji {
 
 
 
-<script type="text/javascript">
-            var _smartsupp = _smartsupp || {};
-            _smartsupp.key = '955bafd5529589b8bc2152a9d802ac3f424b383e';
-_smartsupp.cookieDomain = '192.168.1.7';
-_smartsupp.sitePlatform = 'WP 5.7';
-window.smartsupp||(function(d) {
-                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                c.type='text/javascript';c.charset='utf-8';c.async=true;
-                c.src='//www.smartsuppchat.com/loader.js';s.parentNode.insertBefore(c,s);
-            })(document);
-            </script><script src="./wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
+<script src="./wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
 <script id="wp-polyfill-js-after">
 ( 'fetch' in window ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"><\/scr' + 'ipt>' );( document.contains ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"><\/scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"><\/scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"><\/scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"><\/scr' + 'ipt>' );
 </script>
@@ -731,7 +735,6 @@ var wpcf7 = [];
 <script type="text/javascript">	
 
 	//Hero Section Carousel
-	$(document).ready(function(){
 		$(".hero-carousel").owlCarousel({
 			lazyLoad:false,
 			autoHeight:false,
@@ -759,7 +762,6 @@ var wpcf7 = [];
 
 			}
 		});
-	});
 
 	//Property Types Carousel
 	$(document).ready(function(){

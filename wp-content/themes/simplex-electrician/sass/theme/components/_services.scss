@@ -1,3 +1,6 @@
+@import "./mixins";
+
+
 #wrapper-services{
     margin-top: 120px;
     .services-carousel{
@@ -17,7 +20,8 @@
                             font-weight: 600;
                             color: $secondary;
                         }
-                        .btn-theme{
+                        .btn{
+                            @include button($primary);
                             margin-top: auto;
                         }
                     }
