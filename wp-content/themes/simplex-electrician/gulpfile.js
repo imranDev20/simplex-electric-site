@@ -2,6 +2,7 @@
 var gulp = require( 'gulp' );
 var plumber = require( 'gulp-plumber' );
 var sass = require( 'gulp-sass' );
+ var sassUnicode = require( 'gulp-sass-unicode' );
 var babel = require( 'gulp-babel' );
 var postcss = require( 'gulp-postcss' );
 var rename = require( 'gulp-rename' );
@@ -23,7 +24,30 @@ var paths = cfg.paths;
  *
  * Run: gulp sass
  */
-gulp.task( 'sass', function() {
+// gulp.task( 'sass', function() {
+// 	return gulp
+// 		.src( paths.sass + '/*.scss' )
+// 		.pipe(
+// 			plumber( {
+// 				errorHandler( err ) {
+// 					console.log( err );
+// 					this.emit( 'end' );
+// 				},
+// 			} )
+// 		)
+// 		.pipe( sourcemaps.init( { loadMaps: true } ) )
+// 		.pipe( sass( { errLogToConsole: true } ) )
+// 		.pipe( postcss( [ autoprefixer() ] ) )
+// 		.pipe( sourcemaps.write( undefined, { sourceRoot: null } ) )
+// 		.pipe( gulp.dest( paths.css ) );
+// } );
+
+/**
+ * Compiles .scss to .css files.
+ *
+ * Run: gulp sass
+ */
+ gulp.task( 'sass', function() {
 	return gulp
 		.src( paths.sass + '/*.scss' )
 		.pipe(
@@ -36,6 +60,7 @@ gulp.task( 'sass', function() {
 		)
 		.pipe( sourcemaps.init( { loadMaps: true } ) )
 		.pipe( sass( { errLogToConsole: true } ) )
+		.pipe( sassUnicode() )
 		.pipe( postcss( [ autoprefixer() ] ) )
 		.pipe( sourcemaps.write( undefined, { sourceRoot: null } ) )
 		.pipe( gulp.dest( paths.css ) );

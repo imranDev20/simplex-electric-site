@@ -2,11 +2,10 @@
 
 body{
     #page{
+        font-family: $primary-font-family;
+        line-height: 1.6;
         overflow-x: hidden;
     }
-    font-family: $primary-font-family;
-    line-height: 1.6;
-    overflow-x: hidden;
 }
 
 

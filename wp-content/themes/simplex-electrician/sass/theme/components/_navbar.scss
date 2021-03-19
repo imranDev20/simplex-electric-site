@@ -87,6 +87,13 @@
                     font-size: .9rem;
                  }
             }
+            .btn-theme-alt{
+                padding: 10px 15px;
+                @include responsive (desktop){
+                    padding: 7px 10px;
+                    font-size: .9rem;
+                 }
+            }
         }
     }
 }

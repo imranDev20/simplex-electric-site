@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+	<!-- Jquery CDN Link -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
 	<!-- owlCarousel2 CSS CDN Link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous">
@@ -15,6 +18,18 @@
 
 	<!-- Font Awesome CDN Link -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+
+		<!-- Smartsupp Live Chat script -->
+	<script type="text/javascript">
+		var _smartsupp = _smartsupp || {};
+		_smartsupp.key = '955bafd5529589b8bc2152a9d802ac3f424b383e';
+		window.smartsupp||(function(d) {
+		var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+		s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+		c.type='text/javascript';c.charset='utf-8';c.async=true;
+		c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+		})(document);
+	</script>
 	
 	<title>Simplex Electrical &#8211; For your electrical needs&#8230;</title>
 <meta name="robots" content="max-image-preview:large">
@@ -39,7 +54,7 @@ img.emoji {
 }</style>
 	<link rel="stylesheet" id="wp-block-library-css" href="./wp-includes/css/dist/block-library/style.min.css?ver=5.7" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="./wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4" media="all">
-<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1615971294" media="all">
+<link rel="stylesheet" id="understrap-styles-css" href="./wp-content/themes/simplex-electrician/css/theme.min.css?ver=0.9.4.1616162463" media="all">
 <script src="./wp-includes/js/jquery/jquery.min.js?ver=3.5.1" id="jquery-core-js"></script>
 <script src="./wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <link rel="https://api.w.org/" href="./wp-json/index.html">
@@ -114,9 +129,36 @@ img.emoji {
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item"><a title="Contact" href="#" class="nav-link">Contact</a></li>
 </ul></div>
 				<div class="nav-button d-none d-lg-block">
-					<button class="btn btn-theme">
+					<button type="button" class="btn btn-theme" data-toggle="modal" data-target="#modalForm">
 						<i class="fas fa-bolt"></i> Appointment
 					</button>
+					
+
+
+
+					<div class="modal fade" id="modalForm" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								...
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-theme-alt btn-sm" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-theme btn-sm">Request A Quote</button>
+							</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
 				</div>
 			
 			</div>
@@ -163,6 +205,35 @@ img.emoji {
             </div>
         </div>
     </div>
+
+
+
+    <!-- Request A Quote visible only on phone -->
+
+    <div class="mobile-quote-container">
+        <a class="btn btn-theme" data-toggle="collapse" href="#quoteCollapse" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-chevron-down"></i> Request A Quote</a>
+    </div>
+    <div class="mobile-quote">
+        <div class="collapse" id="quoteCollapse">
+        
+            <div class="card card-body">
+                
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-theme btn-block">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    
 </div>  <!-- Carousel Ends Here  -->
 
 
@@ -529,7 +600,7 @@ img.emoji {
 
 
 <div id="fixed-button">
-    <a class="btn btn-theme" href="tel:+4407383996436"><i class="fas fa-phone-alt"></i> Call us: +44 07383 996436</a> 
+    <a class="btn btn-theme" href="tel:+4407383996436"><i class="fas fa-phone-alt"></i></a> 
 </div>
 
 
@@ -543,7 +614,7 @@ img.emoji {
 				<div class="col-lg-8">
 					<div class="row footer-left-top-section">
 						<div class="col-lg-6">
-							<img src="./wp-content/themes/simplex-electrician/img/footer-logo.svg" alt="logo">
+							<img class="footer-logo" src="./wp-content/themes/simplex-electrician/img/footer-logo.png" alt="logo">
 						</div>
 						<div class="col-lg-6">
 							<p class="text-muted">
@@ -604,7 +675,18 @@ img.emoji {
 
 
 
-<script src="./wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
+<script type="text/javascript">
+            var _smartsupp = _smartsupp || {};
+            _smartsupp.key = '955bafd5529589b8bc2152a9d802ac3f424b383e';
+_smartsupp.cookieDomain = '192.168.1.7';
+_smartsupp.sitePlatform = 'WP 5.7';
+window.smartsupp||(function(d) {
+                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                c.type='text/javascript';c.charset='utf-8';c.async=true;
+                c.src='//www.smartsuppchat.com/loader.js';s.parentNode.insertBefore(c,s);
+            })(document);
+            </script><script src="./wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4" id="wp-polyfill-js"></script>
 <script id="wp-polyfill-js-after">
 ( 'fetch' in window ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"><\/scr' + 'ipt>' );( document.contains ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"><\/scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"><\/scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"><\/scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"><\/scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="./wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"><\/scr' + 'ipt>' );
 </script>
@@ -628,7 +710,7 @@ window.lodash = _.noConflict();
 <script src="./wp-includes/js/dist/api-fetch.min.js?ver=a783d1f442d2abefc7d6dbd156a44561" id="wp-api-fetch-js"></script>
 <script id="wp-api-fetch-js-after">
 wp.apiFetch.use( wp.apiFetch.createRootURLMiddleware( "./wp-json/" ) );
-wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "1690eb0100" );
+wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware( "9e894f8dd4" );
 wp.apiFetch.use( wp.apiFetch.nonceMiddleware );
 wp.apiFetch.use( wp.apiFetch.mediaUploadMiddleware );
 wp.apiFetch.nonceEndpoint = "./wp-admin/admin-ajax.php?action=rest-nonce";
@@ -637,14 +719,12 @@ wp.apiFetch.nonceEndpoint = "./wp-admin/admin-ajax.php?action=rest-nonce";
 var wpcf7 = [];
 </script>
 <script src="./wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4" id="contact-form-7-js"></script>
-<script src="./wp-content/themes/simplex-electrician/js/theme.min.js?ver=0.9.4.1615895288" id="understrap-scripts-js"></script>
+<script src="./wp-content/themes/simplex-electrician/js/theme.min.js?ver=0.9.4.1616130011" id="understrap-scripts-js"></script>
 <script src="./wp-includes/js/wp-embed.min.js?ver=5.7" id="wp-embed-js"></script>
 
 <!-- Jquery CDN Link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 
-
-<!-- <script src="./wp-content/themes/simplex-electrician/src/js/pin-element-top-sticky/jquery.sticky.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
 

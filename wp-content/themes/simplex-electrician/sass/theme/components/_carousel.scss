@@ -1,4 +1,5 @@
 #wrapper-carousel{
+    position: relative;
     .owl-stage-outer{
         .owl-stage{
             .owl-item{
@@ -71,6 +72,12 @@
         }    
     }
 
+    .owl-nav{
+        display: block;
+        @include responsive (laptop){
+            display: none;
+        }
+    }
     
     .nav-btn {
         position: absolute;
@@ -89,6 +96,22 @@
         }
     }
 
+    .mobile-quote-container{
+        position: relative;
+        a{
+            position: absolute;
+            display: none;
+            left: 50%;
+            bottom: -100%;
+            transform: translateX(-50%);
+            bottom: 0;
+            z-index: 10;
+            @include responsive (laptop){
+                display: block;
+            } 
+        }
+        
+    }
     
 }
 
